@@ -8,9 +8,8 @@ from pathlib import Path
 from radiomics import featureextractor
 
 logging.getLogger("radiomics").setLevel(logging.ERROR)
-
-BASE_DIR = Path("/N/project/prostate_cancer_ai/MRI_data/iusm_with_gland/IUSM_raw_reg")
-OUT_CSV  = Path("/N/project/prostate_cancer_ai/pyradiomics_150_features.csv")
+BASE_DIR = Path("data/raw_mri")
+OUT_CSV  = Path("outputs/pyradiomics_150_features.csv")
 
 # Original extractor
 ext_orig = featureextractor.RadiomicsFeatureExtractor()
